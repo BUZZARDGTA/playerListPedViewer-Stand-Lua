@@ -214,7 +214,7 @@ util.create_tick_handler(function()
         if player_id == focused[1] then
             renderPed(player_id)
         else
-            -- Fixes a bug where in SP, Stand returns the wrong player_id, so we makes usage of our RID instead.
+            -- Fixes a bug where in SP, Stand returns the wrong player_id (1 instead of 0), so we makes usage of our RID instead.
             local playerRID = players.get_rockstar_id(player_id)
             local myRID = players.get_rockstar_id(PLAYER.PLAYER_ID())
             if playerRID == myRID then
