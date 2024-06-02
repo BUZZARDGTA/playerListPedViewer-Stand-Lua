@@ -210,7 +210,6 @@ util.create_tick_handler(function()
     end
 
     for player_id in players.list() do
-        print(player_id .. "|" .. PLAYER.PLAYER_ID())
         if player_id == focused[1] then
             renderPed(player_id)
         else
